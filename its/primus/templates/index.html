@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Always force latest IE rendering engine -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="one page, business template, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <!-- meta character set -->
+        <meta charset="utf-8">
+
+        <!-- Site Title -->
+        <title>Welcome to PRIMUS!</title>
+        <!--
+        CSS
+        ============================================= -->
+        <!-- Fontawesome -->
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <!-- Animate -->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <!-- Main Responsive -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="static/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <h1 class="navbar-brand">
+                        <a href="#home">
+                            <img style="width: 100%; height: 100%; "src="static/img/PRIMUS_4.png" alt="Kasper Logo">
+                        </a>
+                    </h1>
+                    <!-- /logo -->
+
+                    </div>
+
+                    <!-- main nav -->
+                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /main nav -->
+                </div>
+        </header>
+
+
+        <!--
+        Home Slider
+        ==================================== -->
+        <section id="home">
+            <div id="home-carousel" class="carousel slide" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-carousel" data-slide-to="1"></li>
+                    <li data-target="#home-carousel" data-slide-to="2"></li>
+                </ol>
+                <!--/.carousel-indicators-->
+
+                <div class="carousel-inner">
+
+                    <div class="item active"  style="background-image: url('static/img/slider/bg2.jpg')" >
+                        <div class="carousel-caption">
+                            <div class="animated bounceInRight">
+                                <h2>반갑습니다! <br>당신의 건강을 책임지는 PRIMUS입니다.</h2>
+                                <p>PRIMUS는 당신의 한 걸음걸음마다 함께 하겠습니다.<br />지금 시작해보세요.<br /><button type="button" onclick="location.href='login.html'">Login</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('static/img/slider/bg2.jpg')">
+                        <div class="carousel-caption">
+                            <div class="animated bounceInDown">
+                                <h2>노인을 위한 안전 IoT 솔루션, PRIMUS</h2>
+                                <p>우리나라의 노인들은 현재 안전 사각지대에 놓였습니다.<br />
+                                노인의 낙상 및 미끄러짐 사고는 매년 꾸준히 증가하고 있는 추세입니다.<br />
+                              또한, 이에 관련된 서비스는 매우 부족한 상황입니다.<br />
+                            PRIMUS가 당신의 건강을 지켜드리겠습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('static/img/slider/bg3.jpg')">
+                         <div class="carousel-caption">
+                            <div class="animated bounceInUp">
+                                <h2>낙상 감지 서비스 PriSAFE</h2>
+                                <p>
+                                  PriSAFE는 타사의 서비스와는 다르게 신발에 탈부착하는 형식의 기기입니다.<br />
+                                  사용자의 상태를 더욱 객관적인 정보를 전달해드립니다.
+                                  PriSAFE는 머신러닝 기술을 사용하고 있어, 더욱 정확한 정보를 전달해드립니다.
+                                  또한, 사용자와 보호자 모두 상황을 관리할 수 있는 서비스이므로, 당신의 낙상상황을 실시간으로 전달해드립니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.carousel-inner-->
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a class="sl-next" href="#home-carousel" data-slide="next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+
+            </div>
+        </section>
+        <!--
+        End #home Slider
+        ========================== -->
+
+
+        <!--
+        #service
+        ========================== -->
+        <section id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInDown">
+                            <h2>Services</h2>
+                            <p>당신의 걸음걸이마다 함께 하겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 wow fadeInLeft">
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="static/img/icons/slip.png" class="media-object" alt="Monitor">
+                            </a>
+                            <div class="media-body">
+                                <h3>실시간 낙상 감지</h3>
+                                <p>당신의 낙상 상태를 실시간으로 분석해드립니다. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="static/img/icons/analyze.png" alt="Cog">
+                            </a>
+                            <div class="media-body">
+                                <h3>실시간 걸음걸이 분석</h3>
+                                <p>당신의 현재 걸음걸이를 분석하여 표시해 드립니다. 머신러닝 기술을 사용하여 객관적인 정보를 제공합니다.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 wow fadeInLeft">
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="static/img/icons/battery.png" alt="Ruler">
+                            </a>
+                            <div class="media-body">
+                                <h3>뛰어난 내구성과 오래가는 배터리</h3>
+                                <p>PriSAFE는 매우 소형화된 제품이지만, 내구성이 뛰어납니다. 또한, 최대 24일의 배터리를 내장하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="static/img/icons/internet.png" alt="Camera">
+                            </a>
+                            <div class="media-body">
+                                <h3>웹과의 연동 서비스</h3>
+                                <p>PriSAFE는 웹과 실시간으로 연동하여 사용자의 사고 여부를 보여드립니다.<br />
+                                또한 자동신고서비스를 지원하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- end .row -->
+            </div> <!-- end .container -->
+        </section>
+        <!--
+        End #service
+        ========================== -->
+
+        <!--
+        #service-bottom
+        ========================== -->
+
+        <section id="service-bottom">
+            <div class="container">
+                    <div class="mobile-device">
+                       <img data-wow-delay="0.2s" class="img-responsive black  wow fadeInLeftBig" src="static/img/icons/iphone-black.png" alt="iPhone Black">
+                        <img data-wow-delay="0.5s" class="img-responsive white  wow fadeInLeftBig" src="static/img/icons/iphone-white.png" alt="iPhone White">
+                    </div>
+                <div class="service-features wow fadeInRight">
+                    <h3>PRIMUS의 기기는</h3>
+                    <ul>
+                        <li>가벼운 무게</li>
+                        <li>신발에 내장할 수 있는 제품</li>
+                        <li>뛰어난 내구성</li>
+                        <li>실시간 통신</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--
+        End #service-bottom
+        ========================== -->
+
+        <!--
+        #about
+        ========================== -->
+        <section id="about">
+            <div class="container" style="padding : 16px 16px 0 16px">
+                <div class="row">
+
+                    <div class="section-title text-center wow fadeInUp">
+                        <h2>About Us</h2>
+                        <p>Primus는 선린인터넷고등학교 NEFUS와 IWOP학생들이 함께 만든 회사입니다.<br />
+                          저희는 노인들이 건강 걱정 없이 생활할 수 있는 사회를 꿈을 가지고 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="about-us text-center wow fadeInDown">
+                        <img src="static/img/about.png" alt="About Us" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        End #about
+        ========================== -->
+
+
+        <!--
+        #count
+        ========================== -->
+        <!--
+        #about-us
+        ========================== -->
+
+        <!--
+        End #about-us
+        ========================== -->
+
+        <!--
+        #quotes
+        ========================== -->
+        <section id="quotes">
+            <div class="container">
+                <div class="row wow zoomIn">
+                    <div class="col-lg-12">
+                        <div class="call-to-action text-center">
+                            <p>“내 신체에 감사하는 것이 자신을 더 사랑하는 열쇠임을 비로소 깨달았다”</p>
+                            <span>오프라 윈프리</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--
+        #footer
+        ========================== -->
+        <footer id="footer" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="footer-logo wow fadeInDown">
+                            <img style="width: 15%; height: 15%;" src="static/img/PRIMUS_2.png" alt="logo">
+                        </div>
+
+                        <div class="footer-social wow fadeInUp">
+                            <h3>We are primus</h3>
+                            <ul class="text-center list-inline">
+                                <li><a href="https://goo.gl/ek6jpQ"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href="https://goo.gl/iWAiNs"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href="https://goo.gl/RQk4Ly"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                <li><a href="https://goo.gl/UBcysD"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--
+        End #footer
+        ========================== -->
+        <!--Start Login -->
+        <!-- main jQuery -->
+        <script src="static/js/vendor/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="static/js/bootstrap.min.js"></script>
+        <!-- jquery.nav -->
+        <script src="static/js/jquery.nav.js"></script>
+        <!-- Portfolio Filtering -->
+        <script src="static/js/jquery.mixitup.min.js"></script>
+        <!-- Fancybox -->
+        <script src="static/js/jquery.fancybox.pack.js"></script>
+        <!-- Parallax sections -->
+        <script src="static/js/jquery.parallax-1.1.3.js"></script>
+        <!-- jQuery Appear -->
+        <script src="static/js/jquery.appear.js"></script>
+        <!-- countTo -->
+        <script src="static/js/jquery-countTo.js"></script>
+        <!-- owl carousel -->
+        <script src="static/js/owl.carousel.min.js"></script>
+        <!-- WOW script -->
+        <script src="static/js/wow.min.js"></script>
+        <!-- theme custom scripts -->
+        <script src="static/js/main.js"></script>
+    </body>
+</html>
